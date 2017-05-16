@@ -71,7 +71,7 @@ DT[,c(2,3)]
   x = 1
   y = 2
 }
-k = {print(10); 5}
+k = {print(10); 5} #executa e depois atribui
 print(k)
 ```
 
@@ -81,7 +81,7 @@ print(k)
 
 ```{r,dependson="init"}
 DT[,list(mean(x),sum(z))]
-DT[,table(y)]
+DT[,table(y)] #frequencia de cada elemento da coluna
 ```
 
 ---
@@ -142,7 +142,7 @@ DT[,b:= mean(x+w),by=a]
 ```{r}
 set.seed(123);
 DT <- data.table(x=sample(letters[1:3], 1E5, TRUE))
-DT[, .N, by=x]
+DT[, .N, by=x] #agrupa tabela por x e .N mostra a quantidade de cada grupo
 ```
 
 ---

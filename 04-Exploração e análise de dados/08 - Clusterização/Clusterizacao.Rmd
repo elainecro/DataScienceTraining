@@ -9,7 +9,7 @@ job: The Scientist
 ## Carregando os dados
 
 ```{r loaddata,tidy=TRUE}
-load("data/samsungData.rda")
+load("data/samsungData.rda") #load é bem mais rapido que os outros
 names(samsungData)[1:12]
 table(samsungData$activity)
 ```

@@ -36,11 +36,11 @@ job: The Scientist
 
 ## Exemplo: Mensagens de erro
 
-```r
-> library(datasets) 
-> data(airquality) 
-> cor(airquality)
-Error in cor(airquality) : missing observations in cov/cor
+```{r}
+library(datasets) 
+data(airquality) 
+cor(airquality)
+#Error in cor(airquality) : missing observations in cov/cor
 ```
 
 

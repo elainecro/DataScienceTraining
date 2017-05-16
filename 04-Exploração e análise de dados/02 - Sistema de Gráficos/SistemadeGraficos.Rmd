@@ -1,8 +1,10 @@
 ---
-title: "Análise Exploratória"
+title: "AnÃ¡lise ExploratÃ³ria"
 author: "Delermando Branquinho Filho"
-output: pdf_document
-subtitle: Análise com Gráficos
+output:
+  html_document: default
+  pdf_document: default
+subtitle: AnÃ¡lise com GrÃ¡ficos
 job: The Scientist
 ---
 

@@ -132,17 +132,18 @@ Error in mean(x) : object 'x' not found
 ---
 
 ## traceback
-```r
-> lm(y ~ x)
-Error in eval(expr, envir, enclos) : object ’y’ not found
-> traceback()
-7: eval(expr, envir, enclos)
-6: eval(predvars, data, env)
-5: model.frame.default(formula = y ~ x, drop.unused.levels = TRUE)
-4: model.frame(formula = y ~ x, drop.unused.levels = TRUE)
-3: eval(expr, envir, enclos)
-2: eval(mf, parent.frame())
-1: lm(y ~ x)
+```{r}
+lm(y ~ x)
+#Error in eval(expr, envir, enclos) : object ’y’ not found
+traceback()
+
+#7: eval(expr, envir, enclos)
+#6: eval(predvars, data, env)
+#5: model.frame.default(formula = y ~ x, drop.unused.levels = TRUE)
+#4: model.frame(formula = y ~ x, drop.unused.levels = TRUE)
+#3: eval(expr, envir, enclos)
+#2: eval(mf, parent.frame())
+#1: lm(y ~ x)
 ```
 
 ---

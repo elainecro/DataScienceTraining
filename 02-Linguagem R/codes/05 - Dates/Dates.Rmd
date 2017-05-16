@@ -21,6 +21,8 @@ R desenvolveu uma representação especial de datas e horários
 - As datas são armazenadas internamente como o número de dias desde 1970-01-01
 - Tmes são armazenados internamente como o número de segundos desde 1970-01-01
 
+**1970-01-01 é conhecida como EPOCH**
+
 ---
 
 ## Datas em R
@@ -105,7 +107,7 @@ Eu nunca me lembro do formato das strings. Verifique `? Strptime` para obter det
 
 Você pode usar operações matemáticas em datas e horários. Bem, realmente apenas + e -. Você pode fazer comparações também (ou seja, ==, <=).
 
-```r
+```{r}
 x <- as.Date("2012-01-01")
 y <- strptime("9 Jan 2011 11:34:21", "%d %b %Y %H:%M:%S") 
 x-y
@@ -120,8 +122,9 @@ x-y
 ---
 
 Anos bissextos, horário de verão e fusos horários.
-```r
-x <- as.Date("2012-03-01") y <- as.Date("2012-02-28") 
+```{r}
+x <- as.Date("2012-03-01") 
+y <- as.Date("2012-02-28") 
 x-y
 ## Time difference of 2 days
 x <- as.POSIXct("2012-10-25 01:00:00")

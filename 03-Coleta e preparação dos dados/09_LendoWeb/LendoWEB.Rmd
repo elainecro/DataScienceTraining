@@ -47,7 +47,7 @@ xpathSApply(html, "//title", xmlValue)
 
 ```{r}
 library("httr")
-pg1 = ("http://httpbin.org/basic-auth/user/passwd")
+pg1 = GET("http://httpbin.org/basic-auth/user/passwd")
 pg1
 ```
 

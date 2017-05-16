@@ -52,6 +52,7 @@ Por padrão, quando um único elemento de uma matriz é recuperado, ele é retor
 
 ```{r}
 x <- matrix(1:6, 2, 3)
+x
 x[1, 2]
 x[1, 2, drop = FALSE]
 ```
@@ -61,6 +62,7 @@ Da mesma forma, subconjunto de uma única coluna ou uma única linha lhe dará u
 
 ```{r}
 x <- matrix(1:6, 2, 3)
+x
 print("x[1,]")
 x[1, ]
 print("imprimindo x",quote = TRUE)
@@ -141,7 +143,7 @@ x <- list(aardvark = 1:5)
 x
 x$a
 x[["a"]]
-x[["a", exact = FALSE]]
+x[["aar", exact = FALSE]]
 ```
 
 ---
@@ -156,6 +158,7 @@ x
 bad <- is.na(x)
 bad
 x[!bad]
+x[bad]
 x
 ```
 
@@ -165,7 +168,7 @@ E se houver várias coisas a fazer com subconjuntos sem NA?
 ```{r}
 x <- c(1, 2, NA, 4, NA, 5)
 x
-y <- c("a", "b", NA, "d", NA, "f")
+y <- c("a", "b", NA, "d", NA, NA)
 y
 good <- complete.cases(x, y)
 good

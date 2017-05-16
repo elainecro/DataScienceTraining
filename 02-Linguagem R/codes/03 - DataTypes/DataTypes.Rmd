@@ -52,6 +52,8 @@ por exempl:
 ```1 / 0```; ```Inf``` pode ser usado em cálculos comuns;
 ```1 / Inf``` é 0
 
+- O valor `` `NA``` representa um valor não disponível ("not available");
+
 - O valor `` `NaN``` representa um valor indefinido (" not a number ");
 por exemplo. 0/0; `` `NaN``` também pode ser pensado como um valor em falta
 ---
@@ -113,7 +115,7 @@ print(x) ## impressão explícita
 ## Impressão
 
 ```{r,warning=FALSE,message=FALSE}
-x <- 1:20
+x <- 1:29
 x
 ```
 
@@ -150,7 +152,8 @@ E quanto ao seguinte?
 
 ```{r,warning=FALSE,message=FALSE}
 y <- c(1.7, "a") ## caractere
-y <- c(TRUE, 2) ## numeric
+y <- c(TRUE, 2) ## numeric, true = 1 converte
+y <- c(FALSE, 3) ##numeric, false = 0 converte
 y <- c("a", TRUE) ## caractere
 ```
 
@@ -209,7 +212,7 @@ attributes(m)
 As matrizes são construídas _column-wise_, então as entradas podem ser pensadas de começar no canto "superior esquerdo" e correr pelas colunas.
 
 ```{r,warning=FALSE,message=FALSE}
-m<- matrix(1: 6, nrow = 2, ncol = 3)
+m<- matrix(1: 7, nrow = 2, ncol = 3)
 m
 ```
 

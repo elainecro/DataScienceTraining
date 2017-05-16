@@ -30,6 +30,9 @@ heatmap(dataMatrix)
 ## E se nós adicionarmos um padrão?
 
 ```{r onePattern}
+
+head(dataMatrix)
+
 set.seed(678910)
 for(i in 1:40){
   # flip a coin
@@ -39,6 +42,8 @@ for(i in 1:40){
     dataMatrix[i,] <- dataMatrix[i,] + rep(c(0,3),each=5)
   }
 }
+
+head(dataMatrix)
 ```
 
 

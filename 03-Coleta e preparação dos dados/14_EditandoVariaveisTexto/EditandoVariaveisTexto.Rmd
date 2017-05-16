@@ -128,7 +128,7 @@ paste("Delermando","Branquinho","Filho")
 
 ```{r,dependson="getData"}
 paste0("Delermando","Branquinho","Filho")
-str_trim("Delermando      ")
+str_trim("  Delermando      ")
 ```
 
 ---

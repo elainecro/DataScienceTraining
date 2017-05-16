@@ -169,15 +169,15 @@ function (..., file = "", sep = " ", fill = FALSE,
 
 Uma captura com ... é que os argumentos que aparecem _after_ ... na lista de argumentos devem ser nomeados explicitamente e não podem ser parcialmente correspondidos.
 
-```r
-> args(paste)
-function (..., sep = " ", collapse = NULL)
+```{r}
+args(paste)
+#function (..., sep = " ", collapse = NULL)
 
-> paste("a", "b", sep = ":")
-[1] "a:b"
+paste("a", "b", sep = ":")
+#[1] "a:b"
 
-> paste("a", "b", se = ":")
-[1] "a b :"
+paste("a", "b", se = ":")
+#[1] "a b :"
 ```
 
 

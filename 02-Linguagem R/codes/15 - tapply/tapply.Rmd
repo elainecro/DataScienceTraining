@@ -27,16 +27,19 @@ function (X, INDEX, FUN = NULL, ..., simplify = TRUE)
 
 Take group means.
 
-```r
-> x <- c(rnorm(10), runif(10), rnorm(10, 1))
-> f <- gl(3, 10)
-> f
- [1] 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3
-[24] 3 3 3 3 3 3 3
-Levels: 1 2 3
-> tapply(x, f, mean)
-        1         2         3 
-0.1144464 0.5163468 1.2463678
+```{r}
+x <- c(rnorm(10), runif(10), rnorm(10, 1))
+f <- gl(3, 10)
+f
+
+#[1] 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3
+#[24] 3 3 3 3 3 3 3
+#Levels: 1 2 3
+
+tapply(x, f, mean)
+
+#        1         2         3 
+#0.1144464 0.5163468 1.2463678
 ```
 
 ---

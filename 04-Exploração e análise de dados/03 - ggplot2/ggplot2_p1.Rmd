@@ -1,8 +1,10 @@
 ---
 title: "Análise Exploratória"
 author: "Delermando Branquinho Filho"
-output: pdf_document
-subtitle:ggplot #1
+output:
+  html_document: default
+  pdf_document: default
+subtitle: ggplot
 job: The Scientist
 ---
 
